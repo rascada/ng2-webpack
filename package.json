@@ -1,9 +1,12 @@
 {
   "name": "ng2-webpack",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple yet powerful (because of webpack) angular2 configuration",
   "main": "src/main.ts",
   "author": "Damian Martyniak",
+  "scripts": {
+    "start": "webpack"
+  },
   "license": "ISC",
   "dependencies": {
     "angular2": "^2.0.0-beta.12",
