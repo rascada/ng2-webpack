@@ -1,5 +1,6 @@
 module.exports = {
   entry: './src/main',
+
   output: {
     filename: 'angular2.js',
     path: 'dist',
@@ -8,6 +9,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.ts', '.js'],
   },
+
   module: {
     loaders: [
       {
