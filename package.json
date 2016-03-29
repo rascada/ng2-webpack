@@ -5,7 +5,8 @@
   "main": "src/main.ts",
   "author": "Damian Martyniak",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack",
+    "dev": "webpack-dev-server --inline --content-base dist"
   },
   "license": "ISC",
   "dependencies": {
@@ -20,6 +21,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "ts-loader": "^0.8.1",
     "typescript": "^1.8.9",
-    "webpack": "^1.12.14"
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
   }
 }
