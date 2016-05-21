@@ -2,7 +2,7 @@ module.exports = {
   entry: './src/main',
 
   output: {
-    filename: 'angular2.js',
+    filename: 'app.js',
     path: 'dist',
   },
 
