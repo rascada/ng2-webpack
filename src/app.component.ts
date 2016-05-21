@@ -3,13 +3,15 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'app',
     template: `
-      <h1> {{ title }} </h1>
-      <p> {{ model }} </p>
+      <h1> {{ helloMessage }} </h1>
+      <label> write your name </label>
       <input [(ngModel)]='model' placeholder='two-way binding'>`,
 })
-class AppComponent {
-  title: string = 'angular2 boilerplate';
-  model: string = 'model';
-}
+export class AppComponent {
+  title: string = 'angular 2 boilerplate';
+  model: string;
 
-export default AppComponent;
+  get helloMessage() {
+    return this.model ? `hello ${this.model}!` : this.title;
+  }
+}
