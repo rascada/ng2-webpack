@@ -1,9 +1,9 @@
-///<reference path="../node_modules/angular2/typings/browser.d.ts"/>
+/// <reference types="core-js" />
 
 import 'core-js';
 import 'zone.js';
-import {bootstrap} from '@angular/platform-browser-dynamic';
 
-import {AppComponent} from './app.component';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {AppModule} from "./app.module";
 
-bootstrap(AppComponent);
+platformBrowserDynamic().bootstrapModule(AppModule);
