@@ -8,10 +8,12 @@ import {Component} from '@angular/core';
       <input [(ngModel)]='model' placeholder='two-way binding'>`,
 })
 export class AppComponent {
-  title: string = 'angular 2 boilerplate';
-  model: string;
+    title: string = 'angular 2 boilerplate';
+    model: string;
 
-  get helloMessage() {
-    return this.model ? `hello ${this.model}!` : this.title;
-  }
+    get helloMessage() {
+        const {model, title} = this;
+
+        return model ? `hello ${model}!` : title;
+    }
 }
